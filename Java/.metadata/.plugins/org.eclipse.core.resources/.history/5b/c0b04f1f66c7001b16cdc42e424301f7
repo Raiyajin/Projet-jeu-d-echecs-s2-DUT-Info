@@ -1,0 +1,65 @@
+package fr.raiyajin.jeu;
+import java.util.*;
+import fr.raiyajin.echiquier.*;
+import fr.raiyajin.projet_echec.*;
+
+public class Partie {
+	int[] tab;
+	public void sauvegarderPartie() {
+		
+	}
+	public void finPartie() {
+		/*if roiEstVaincue = True
+		 * SysOut Joueur vainqueur.
+		 */
+	}
+	
+	public int[] getTab() {
+		return this.tab;
+	
+	}
+	
+	public void setTab(int[] tabl) {
+		this.tab = tabl;
+	}
+
+		
+	
+	
+
+	
+
+	
+	
+	    
+	
+	public static void main(String[] args) {
+		Joueur Joueur1 = new Joueur();
+		Joueur Joueur2 = new Joueur();
+		Echiquier board = new Echiquier();
+		board.initialiser();
+		coord tabl = new coord();
+		temp temporaire = new temp();
+		int tour = 1;
+		//while (roiEstVaincu() == false) {
+			if (tour%2 == 0) {
+				System.out.println("Tour du joueur 1");
+				//traduire input en meth avec .deplacer()
+				int[] tab = init();
+				board.deplacer(tab[0], tab[1], tab[2], tab[3]);
+				
+			}
+			else {
+				System.out.println("Tour du joueur 2");
+				//traduire input en meth avec .deplacer()
+				int[] tab = init();
+				board.deplacer(tab[0], tab[1], tab[2], tab[3]);
+			}
+		}
+		
+		
+
+
+		
+	
+}

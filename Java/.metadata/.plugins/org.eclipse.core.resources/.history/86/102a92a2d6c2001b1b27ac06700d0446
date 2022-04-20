@@ -1,0 +1,22 @@
+package fr.raiyajin.jeu;
+
+import java.util.Scanner;
+
+public class Joueur {
+	String nom;
+	
+	public Joueur(String nom) {
+		this.nom = nom;
+	}
+	
+	public Joueur() { //Constructeur vide pour la méthode init
+		
+	}
+	
+	public void init() {
+		System.out.println("Entrez le nom du joueur 1");
+		Scanner nom_joueur1 = new Scanner(System.in);
+		System.out.println("Entrez le nom du joueur 2");
+		Scanner nom_joueur2 = new Scanner(System.in);
+	}
+}

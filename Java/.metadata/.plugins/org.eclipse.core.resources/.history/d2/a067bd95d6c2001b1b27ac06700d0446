@@ -1,0 +1,14 @@
+package fr.raiyajin.jeu;
+
+
+public class Joueur {
+	String nom;
+	
+	public Joueur(String nom) {
+		this.nom = nom;
+	}
+	
+	public Joueur() { //Constructeur vide pour la méthode init
+		
+	}
+}

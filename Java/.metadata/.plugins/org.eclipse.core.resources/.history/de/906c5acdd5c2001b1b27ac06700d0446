@@ -1,0 +1,10 @@
+package fr.raiyajin.jeu;
+
+
+public class Joueur {
+	String nom;
+	
+	public Joueur() {
+		this.nom = nom;
+	}
+}

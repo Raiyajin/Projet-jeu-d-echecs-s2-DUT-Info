@@ -1,0 +1,22 @@
+échiquier 64 cases
+16 pièces (*2 car 2 couleurs) : 2 Tours		(x cases colonnes & rangées)		      [SI VIDE ou ennemie]
+				2 Cavaliers	(1 case diagonale puis 1 case colonne/rangée) [SI VIDE ou ennemie]
+				2 Fous		(x cases diagonales)			      [SI VIDE ou ennemie]
+				1 Roi		(1 case n'importe quelle directions)	      [SI VIDE ou ennemie]
+				1 Reine		(x cases n'importe quelle directions)	      [SI VIDE ou ennemie]
+				8 Pions		(1 à 2 cases devant lui)	              [SI VIDE]
+
+
+----------------------------------------------------------------------------------------------------------------------------
+joueur / échiquer -> cases / figures (couleurs diff) / déplacement de coups -> vérifier case et sa pièce
+										& pièces sur son chemin
+										& puisse manger pièce ennemie
+VISUEL
+
+	Blanc		Noir
+Roi 	  ♔		 ♚
+Dame      ♕		 ♛
+Tour      ♖		 ♜
+Fou	  ♗		 ♝
+Cavalier  ♘		 ♞
+Pion	  ♙		 ♟

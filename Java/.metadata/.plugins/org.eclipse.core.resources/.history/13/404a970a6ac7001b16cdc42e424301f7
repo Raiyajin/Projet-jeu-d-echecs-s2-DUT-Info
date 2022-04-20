@@ -1,0 +1,71 @@
+package fr.raiyajin.jeu;
+
+import java.util.Scanner;
+
+public class coord {
+	int[] tab;
+	public coord() {
+		this.init();
+	}
+	
+	public int[] init() {
+		int [] tab2 = this.getTab();
+		System.out.println("Sélectionner une case départ et arrivé exemple : 'a1 a2'");
+		Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine();
+		str.trim();
+		char chx1 = str.charAt(0);
+		char chy1 = str.charAt(1);
+		char chx2 = str.charAt(2);
+		char chy2 = str.charAt(4);
+	//*Permet de recupérer caractère par caractère le String entrée par le joueur   
+
+
+		int x1;
+		int x2;
+		String z = null;
+		char chiffres[] = { 'a', 'b' , 'c', 'd', 'e' ,'f', 'g' , 'h' };
+
+	    for(int i = 0; i < chiffres.length && chx1!=chiffres[i]; i++) {
+	    	   z = String.valueOf(z+1);
+	    	   String x = z;
+	           x1 = Integer.parseInt(x);
+	           x2 = Integer.parseInt(x);
+	           if (chx1==chiffres[i]) {
+	        	   tab2[0] = x1;
+	           }
+	           if (chx2==chiffres[i]) {
+	        	   tab2[2] = x2;
+	           }
+	           
+	//*On a crée une liste avec les différentes lettres de a à h et on les transforment en int de 1 à 8 pour les coordonnées ( a=1 , b=2 , ... )
+
+	    }
+
+	    
+	    String stock_y1=Character.toString(chy1);
+	    String stock_y2=Character.toString(chy2);
+	    //transforme les valeurs entrées par le joueur de en string puis en int
+	    int y1 = Integer.parseInt(stock_y1);
+	    int y2 = Integer.parseInt(stock_y2);
+	    
+	    tab2[1] = y1;
+	    tab2[3] = y2;
+	    
+	    
+	    
+	    return this.tab;
+
+
+	}	
+	public int[] getTab() {
+		return this.tab;
+	
+	}
+	
+	public void setTab(int[] tabl) {
+		this.tab = tabl;
+	}
+
+		
+}

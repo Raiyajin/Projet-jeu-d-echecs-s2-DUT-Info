@@ -1,0 +1,8 @@
+package fr.raiyajin.echiquier.couleur;
+
+public class Couleur {
+	String[] Blanc = {"♔", "♕", "♖", "♗", "♘", "♙"};
+	String[] Noir = {"♚", "♛", "♜", "♝", "♞", "♟"};
+	
+	
+}
